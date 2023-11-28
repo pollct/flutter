@@ -43,10 +43,12 @@ class DBProvider {
     final valor = newScan.valor;
 
     final db = await database;
+    final args = [id, tipo, valor];
+
     final res = await db?.rawInsert('''
       INSERT INTO Scans(id, tipo, valor)
-      VALUES($id, '$tipo', '$valor')
-    ''');
+      VALUES(?, ? ,?)
+    ''', args);
 
     return res;
   }
