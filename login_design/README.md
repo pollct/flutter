@@ -1,4 +1,5 @@
 A login layout with validations in the inputs.
+<br>
 Flutter version: 3.10.5
 <br>
 dependencies:
