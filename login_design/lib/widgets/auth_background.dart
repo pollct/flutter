@@ -44,7 +44,6 @@ class _UpperBox extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: size.height * 0.4,
-      //color: Color.fromARGB(255, 54, 120, 244),
       decoration: _upperBackground(),
       child: Stack(
         children: [
@@ -62,8 +61,6 @@ class _UpperBox extends StatelessWidget {
     return const BoxDecoration(
       gradient: LinearGradient(
         colors: [
-          //Color.fromRGBO(63, 63, 156, 1),
-          //Color.fromRGBO(90, 70, 178, 1)
           Color.fromRGBO(13, 71, 161, 1),
           Color.fromRGBO(21, 101, 192, 1)
         ]
